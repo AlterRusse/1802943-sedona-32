@@ -112,32 +112,41 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <!--Не очень понял, как в полях input разграничить диапазон цены, 0 и 9000 я написал в атрибут placeholder.
-            А как оформить "от" и "до"?-->
-            <label class="catalog-filter-label visually-hidden">
-               <input class="catalog-filter-input" placeholder="0     от" type="number" name="min-price"> 
-            </label>
-            <label class="catalog-filter-label visually-hidden">
-               <input class="catalog-filter-input" placeholder="9000     до" type="number" name="max-price"> 
-            </label>
+            <div>
+              <label class="catalog-filter-label visually-hidden">
+                <span>от</span>
+                <input class="catalog-filter-input" type="text" name="from" placeholder="0">
+              </label>
+              <label class="catalog-filter-label visually-hidden">
+                <span>до</span>
+                <input class="catalog-filter-input" type="text" name="to" placeholder="9000">
+              </label>
+            </div>
+            
+            <p>
+              <button class="range-toggle toggle-min" type="button">
+                <span class="visually-hidden">Левый ползунок</span>
+              </button>
+              <button class="range-toggle toggle-max" type="button">
+                <span class="visually-hidden">Правый ползунок</span> 
+              </button>
+              <div class="range-band">
+                <span class="visually-hidden">Полоса</span>
+              </div>
+            </p>
+            
             <button class="btn btn-catalog-filter" type="submit">
               <span class="span-filter">Применить</span>
             </button>
-            <!--1 вариант:-->
-            <button class="btn-catalog-reset" type="submit">
-              <span class="-spanfilter-reset">Сбросить</span>
+            
+            <button class="btn-catalog-reset" type="reset">
+              <span class="spanfilter-reset">Сбросить</span>
             </button>
-            <!--2 вариант: в макете "сбросить как-то не похоже на кнопку", 
-              может сделать ссылку на каталог, которая просто перезагрузит страницу?-->
-            <!--
-            <a class="catalog-reset-link" href="catalog.html">Сбросить</a>
-            -->
+            
           </fieldset>
         </form>
 
         <form class="sorting-type">
-          <!--а что делать с отображаемым количеством гостиниц? это же переменный параметр.
-          нужно это как-то обозначить сейчас или динамика будет создаваться позднее?-->
           <h2 class="sortint-title-h2">Найдено гостиниц: 38</h2>
           <label class="visually-hidden" for="sorting">Сортировка</label>
           <select class="select-control" id="sorting" name="sorting">
@@ -145,92 +154,75 @@
             <option value="cheap">Сначала популярное</option>
             <option value="expensive">Сначала дорогое</option>
           </select>
+          <!--МОЙ: Невидимая кнопка отправляет данные с формы-->
+          <button class="visually-hidden" type="button"></button>
         </form>
 
-        <a href="#" class="btn btn-mini">
+        <a href="#" class="btn-mini">
           <span class="visually-hidden">Показать список</span>
         </a>
-        <a href="#" class="btn btn-mini">
-          <span class="visually-hidden">Показать как-то еще</span>
+        <a href="#" class="btn-mini">
+          <span class="visually-hidden">Показать слайд-шоу</span>
         </a>
-        <a href="#" class="btn btn-mini">
+        <a href="#" class="btn-mini">
           <span class="visually-hidden">Показать карточки</span>
         </a>
 
-        <ul>
-          <li>
-            <a href="#">
-              <img src="" alt="Amara">
-              <h3 class="catalog-title-h3">Amara Resort & Spa</h3>
-            </a>
+        <ul class="hotel-list">
+          <li class="hotel-card">
+            <a href="#"> <img src="" alt="Amara"></a>
+            <!--МОЙ: уникальный класс для h3 страницы каталога не нужен - заголовок может быть использован и далее-->
+            <a href="#"> <h3 class="catalog-title-h3">Amara Resort & Spa</h3></a>
             <p class="hotel-type">Гостиница</p>
             <p class="hotel-price">От 4000</p>
             <a class="btn catalog-info-btn" href="#">Подробнее</a>
-            <!--Тут должна быть кнопка, как-то формирующая список изранного и динамическим состоянием, 
-            запихну просто кнопку-->
             <button class="btn select-btn" type="button">В избранное</button>
-            <!--по блоку рейтинга такой же вопрос как и с гостиницами, он же должен быть динамичен-
-            в данном блоке отображается инфа, которая формируется за счет отзывов клиентов, бахну div-->
-            <div class="rating-stars">
-              <span class="visually-hidden">4 звезды</span>
+            <div class="rating-stars" data-stars="4">
+                <span class="visually-hidden">4 звезды</span>
             </div>
-            <div class="rating-block">
-              <span class="social-rating-text">Рейтинг: 8,5</span>
-            </div>
+            <p class="social-rating-text">Рейтинг: 8,5</p>
           </li>
-          <li>
-            <a href="#">
-              <img src="" alt="Desert">
-              <h3 class="catalog-title-h3">Desert Quail Inn</h3>
-            </a>
+          <li class="hotel-card">
+            <a href="#"> <img src="" alt="Desert"></a>
+            <a href="#"> <h3 class="catalog-title-h3">Desert Quail Inn</h3></a>
             <p class="hotel-type">Мотель</p>
             <p class="hotel-price">От 3000</p>
             <a class="btn catalog-info-btn" href="#">Подробнее</a>
             <button class="btn select-btn" type="button">В избранное</button>
-            <div class="rating-stars">
+            <div class="rating-stars" data-stars="3">
               <span class="visually-hidden">3 звезды</span>
             </div>
-            <div class="rating-block">
-              <span class="social-rating-text">Рейтинг: 8,9</span>
-            </div>
+            <p class="social-rating-text">Рейтинг: 8,9</p>
           </li>
-          <li>
-            <a href="#">
-              <img src="" alt="Villas">
-              <h3 class="catalog-title-h3">Villas at Poco Diablo</h3>
-            </a>
+          <li class="hotel-card">
+            <a href="#"> <img src="" alt="Villas"></a>
+            <a href="#"> <h3 class="catalog-title-h3">Villas at Poco Diablo</h3></a>
             <p class="hotel-type">Апартаменты</p>
             <p class="hotel-price">От 2000</p>
             <a class="btn catalog-info-btn" href="#">Подробнее</a>
             <button class="btn select-btn" type="button">В избранное</button>
-            <div class="rating-stars">
+            <div class="rating-stars" data-stars="2">
               <span class="visually-hidden">2 звезды</span>
             </div>
-            <div class="rating-block">
-              <span class="social-rating-text">Рейтинг: 9,2</span>
-            </div>
+            <p class="social-rating-text">Рейтинг: 9,2</p>
           </li>
-          <li>
-            <a href="#">
-              <img src="" alt="GreenTree">
-              <h3 class="catalog-title-h3">GreenTree Inn</h3>
-            </a>
+          <li class="hotel-card">
+            <a href="#"> <img src="" alt="GreenTree"></a>
+            <a href="#"> <h3 class="catalog-title-h3">GreenTree Inn</h3></a>
             <p class="hotel-type">Гостиница</p>
             <p class="hotel-price">От 3000</p>
             <a class="btn catalog-info-btn" href="#">Подробнее</a>
             <button class="btn select-btn" type="button">В избранное</button>
-            <div class="rating-stars">
+            <div class="rating-stars" data-stars="2">
               <span class="visually-hidden">2 звезды</span>
             </div>
-            <div class="rating-block">
-              <span class="social-rating-text">Рейтинг: 9,2</span>
-            </div>
+            <p class="social-rating-text">Рейтинг: 9,2</p>
           </li>
         </ul>
 
-        <button class="btn pagination-load-more" type="button">Загрузить ещё</button>
+        <a class="btn btn-load-more" href="#">Загрузить ещё</a>
 
-        <ul class="pagination">
+        <ul class="pagination-list">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
@@ -243,7 +235,6 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
-          <!--Не уверен насчет следующей ссылки,там как-то должен переключиться диапазон страниц-->
           <li class="pagination-item">
             <a class="pagination-link" href="#">...</a>
           </li>
@@ -255,9 +246,11 @@
         <form class="sorting-type">
           <label for="pages-quantity">Гостиниц на странице:</label>
           <select class="select-control" id="pages-quantity" name="pages-quantity">
-            <option value="min">4</option>
-            <option value="max">8</option>
+            <!--МОЙ:атрибуту value придать конкретное значение, т.к. кол-во пунктов в дальнейшем может быть увеличено-->
+            <option value="4">4</option>
+            <option value="8">8</option>
           </select>
+          <button class="visually-hidden" type="button"></button>
         </form>
       </section>
 
