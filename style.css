@@ -1,0 +1,96 @@
+.search {
+    background-image: url(img/search.svg);
+    background-repeat: no-repeat;
+    width: 18;
+    height: 18;
+}
+
+.chosen {
+    background-image: url(img/hearth.svg);
+    background-repeat: no-repeat;
+    width: 18;
+    height: 17;
+}
+
+.comparing-block {
+    background-image: url(img/index-background.jpg);
+    background-repeat: no-repeat;
+    width: 1200;
+    height: 485;
+}
+
+div.house-img {
+    background-image: url(img/house-icon.svg);
+    width: 74,7;
+    height: 72;
+}
+
+div.burger-img {
+    background-image: url(img/burger-icon.svg);
+    width: 74,7;
+    height: 72;
+}
+
+div.present-img {
+    background-image: url(img/present-icon.svg);
+    width: 74,7;
+    height: 72;
+}
+
+.main-subscription {
+    background-image: url(img/subscribe-background.jpg);
+    background-repeat: no-repeat;
+    width: 1200;
+    height: 411;
+}
+
+.twitter {
+    background-image: url(img/twitter.png);
+    width: 18;
+    height: 15;
+}
+
+.facebook {
+    background-image: url(img/twitter.png);
+    width: 10;
+    height: 18;
+}
+
+.youtube {
+    background-image: url(img/twitter.png);
+    width: 20;
+    height: 16;
+}
+
+.house-catalog {
+    background-image: url(img/house-catalog-header.svg);
+}
+
+.catalog-filters {
+    background-image: url(img/catalog-header-background.jpg);
+    width: 1200;
+    height: 401;
+}
+
+.list-img {
+    background-image: url(img/list-mode.svg);
+    width: 16;
+    height: 14;
+}
+
+.slide-img {
+    background-image: url(img/slide-mode.svg);
+    width: 16;
+    height: 14;
+}
+
+.card-img {
+    background-image: url(img/card-mode.svg);
+    width: 16;
+    height: 14;
+}
+
+.rating-stars {
+    background-image: url(img/rating-star.svg);
+}
+
