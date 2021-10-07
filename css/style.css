@@ -1,0 +1,80 @@
+.search {
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+}
+
+.chosen {
+    background-image: url(../img/hearth.svg);
+    background-repeat: no-repeat;
+}
+
+.comparing-block {
+    background-image: url(../img/mountain.jpg);
+    background-repeat: no-repeat;
+}
+
+.house-img {
+    background-image: url(../img/house-icon.svg);
+    background-repeat: no-repeat;
+}
+
+.burger-img {
+    background-image: url(../img/burger-icon.svg);
+    background-repeat: no-repeat;
+}
+
+.present-img {
+    background-image: url(../img/present-icon.svg);
+    background-repeat: no-repeat;
+}
+
+.main-subscription {
+    background-image: url(../img/valley-blur.jpg);
+    background-repeat: no-repeat;
+}
+
+.twitter {
+    background-image: url(../img/twitter.png);
+    background-repeat: no-repeat;
+}
+
+.facebook {
+    background-image: url(../img/twitter.png);
+    background-repeat: no-repeat;
+}
+
+.youtube {
+    background-image: url(../img/twitter.png);
+    background-repeat: no-repeat;
+}
+
+.house-catalog {
+    background-image: url(../img/house-mini.svg);
+    background-repeat: no-repeat;
+}
+
+.catalog-filters {
+    background-image: url(../img/mountain-blur.jpg);
+    background-repeat: no-repeat;
+}
+
+.list-img {
+    background-image: url(../img/list-mode.svg);
+    background-repeat: no-repeat;
+}
+
+.slide-img {
+    background-image: url(../img/slide-mode.svg);
+    background-repeat: no-repeat;
+}
+
+.card-img {
+    background-image: url(../img/card-mode.svg);
+    background-repeat: no-repeat;
+}
+
+.rating-stars {
+    background-image: url(../img/rating-star.svg);
+    background-repeat: no-repeat;
+}
+
