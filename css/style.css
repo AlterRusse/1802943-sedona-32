@@ -1,3 +1,59 @@
+/*general set*/
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+li {
+    list-style: none; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+/*Pages*/
+
+/*general header set & images*/
+
+.page-header {
+    background-color: #ffffff;
+}
+
+.navigation-link {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+}
+
 .search {
     background-image: url(../img/search.svg);
     background-repeat: no-repeat;
@@ -8,45 +64,256 @@
     background-repeat: no-repeat;
 }
 
+/*main page comparing block*/
+
 .comparing-block {
     background-image: url(../img/mountain.jpg);
+    background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
+.comparing-h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.comparing-description {
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+}
+
+/*main page advantages block*/
+
+.main-advantages-list {
+    text-align: center;
+}
+
+.main-advantages-item {
+    color:#000000;
+    
+}
+
+.advantages-item-blue {
+    color: #ffffff;
+    background-color: #83B3D3;
+}
+
+.advantages-item-grey {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-white {
+    background-color: #ffffff;
+}
+
+.advantages-item-semiblue {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.title-h3 {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    
+}
+
+.advantages-number {
+    text-transform: uppercase;
+}
+
+.list-text {
+    color: #333333;
+}
+
+li.advantages-number-blue {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.list-text-blue {
+    color: #ffffff;
+}
+
+/*advantages block extra images*/
+
 .house-img {
     background-image: url(../img/house-icon.svg);
+    width: 75px;
+    height: 72px;
     background-repeat: no-repeat;
 }
 
 .burger-img {
     background-image: url(../img/burger-icon.svg);
+    width: 74px;
+    height: 70px;
     background-repeat: no-repeat;
 }
 
 .present-img {
     background-image: url(../img/present-icon.svg);
+    width: 64px;
+    height: 76px;
     background-repeat: no-repeat;
+}    
+
+/*main page recording block*/
+
+.main-recording {
+    text-align: center;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+}
+
+.recording-h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.recording-text {
+    color: #333333;
+}
+
+/*general buttons set*/
+
+.btn {
+    color: #ffffff;
+    background-color: #756257;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.btn-recording {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.btn-newsletter {
+    background-color: #83B3D3;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.btn-catalog-filter {
+    background-color: #83B3D3;
+}
+
+.spanfilter-reset {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.btn-load-more {
+    background-color: #83B3D3;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-select {
+    background-color: #83B3D3;
+}
+
+.btn-chosen {
+    background-color: #7DB54F;
+}
+
+.btn-pagination-link {
+    background-color: #83B3D3;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E5E5E5;
+}
+
+.btn-pagination-current {
+    color: #000000;
+    background-color: #E5E5E5;
+}
+
+/*subscription block general set*/
+
+.subscription-block {
+    text-align: center;
+    background-color: #ffffff;
 }
 
 .main-subscription {
     background-image: url(../img/valley-blur.jpg);
+    background-size: 100% auto;
     background-repeat: no-repeat;
+}    
+
+.subscription-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.twitter {
-    background-image: url(../img/twitter.png);
-    background-repeat: no-repeat;
+.subscription-text {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
 }
 
-.facebook {
-    background-image: url(../img/twitter.png);
-    background-repeat: no-repeat;
+.main-subscription-title {
+    color: #ffffff
 }
 
-.youtube {
-    background-image: url(../img/twitter.png);
-    background-repeat: no-repeat;
+.main-subscription-text {
+    color: #ffffff
 }
+
+.catalog-subscription-text {
+    color: #333333
+}
+
+/*catalog gallery set*/
+
+.hotel-card {
+    color: #333333;
+}
+
+.catalog-title-h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.hotel-type   {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.pages-quantity {
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+}
+
+/* catalog gallery images*/
 
 .house-catalog {
     background-image: url(../img/house-mini.svg);
@@ -77,4 +344,43 @@
     background-image: url(../img/rating-star.svg);
     background-repeat: no-repeat;
 }
+
+/*general footer set & images*/
+
+.tel-link {
+    color: #000000;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.twitter {
+    background-image: url(../img/twitter.svg);
+    background-repeat: no-repeat;
+}
+
+.facebook {
+    background-image: url(../img/facebook.svg);
+    background-repeat: no-repeat;
+}
+
+.youtube {
+    background-image: url(../img/youtube.svg);
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
