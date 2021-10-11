@@ -17,15 +17,17 @@
 }
 
 body {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
     background-color: #F2F2F2;
 }
 
-li {
-    list-style: none; 
+.clear-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 a {
@@ -45,13 +47,12 @@ a {
 }
 
 .navigation-link {
-    font-family: "PT Sans", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
     text-align: left;
     text-decoration: none;
-    color: inherit;
+    color: #000000
 }
 
 .search {
@@ -73,13 +74,11 @@ a {
 }
 
 .comparing-h1 {
-    font-style: normal;
-    font-weight: bold;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
-    color: #000000;
+    
 }
 
 .comparing-description {
@@ -95,8 +94,7 @@ a {
 }
 
 .main-advantages-item {
-    color:#000000;
-    
+    color: #000000;
 }
 
 .advantages-item-blue {
@@ -120,7 +118,6 @@ a {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
-    
 }
 
 .advantages-number {
@@ -131,7 +128,7 @@ a {
     color: #333333;
 }
 
-li.advantages-number-blue {
+.advantages-number-blue {
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -140,28 +137,8 @@ li.advantages-number-blue {
     color: #ffffff;
 }
 
-/*advantages block extra images*/
-
-.house-img {
-    background-image: url(../img/house-icon.svg);
-    width: 75px;
-    height: 72px;
-    background-repeat: no-repeat;
-}
-
-.burger-img {
-    background-image: url(../img/burger-icon.svg);
-    width: 74px;
-    height: 70px;
-    background-repeat: no-repeat;
-}
-
-.present-img {
-    background-image: url(../img/present-icon.svg);
-    width: 64px;
-    height: 76px;
-    background-repeat: no-repeat;
-}    
+/*advantages block extra images (deleted)*/
+ 
 
 /*main page recording block*/
 
@@ -239,11 +216,6 @@ li.advantages-number-blue {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #E5E5E5;
 }
 
 .btn-pagination-current {
@@ -296,7 +268,6 @@ li.advantages-number-blue {
 }
 
 .catalog-title-h3 {
-    font-weight: 700;
     font-size: 24px;
     line-height: 31px;
     color: #000000;
@@ -369,18 +340,3 @@ li.advantages-number-blue {
     background-image: url(../img/youtube.svg);
     background-repeat: no-repeat;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
