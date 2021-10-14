@@ -16,7 +16,18 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
+.main-container {
+    flex-grow: 1;
+}
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -46,6 +57,26 @@ a {
     background-color: #ffffff;
 }
 
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    width: 309px;
+}
+
+.header-logo {
+    display: block; 
+    margin: 0 auto;
+}
+/*дал 300px  с запасом*/
+.navigation-user {
+    width: 300px;
+    margin-left: auto;
+}
+
 .navigation-link {
     font-size: 20px;
     font-weight: 700;
@@ -67,10 +98,22 @@ a {
 
 /*main page comparing block*/
 
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .comparing-block {
+    display: block;
+    margin: 0 auto;
     background-image: url(../img/mountain.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
+}
+
+.comparing-img {
+    display: block;
+    margin: 0 auto;
 }
 
 .comparing-h1 {
@@ -90,11 +133,26 @@ a {
 /*main page advantages block*/
 
 .main-advantages-list {
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-.main-advantages-item {
-    color: #000000;
+.advantages-item {
+    width: 400px;
+    margin: 0;
+}
+
+.advantages-item-blue {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.advantages-container-standard {
+    display: flex;
+    justify-content: space-between;
 }
 
 .advantages-item-blue {
@@ -143,9 +201,11 @@ a {
 /*main page recording block*/
 
 .main-recording {
+    width: 1200px;
     text-align: center;
     background-color: #ffffff;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 .recording-h2 {
@@ -318,12 +378,35 @@ a {
 
 /*general footer set & images*/
 
+.page-footer {
+    background-color: #ffffff;
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*ширина блока увеличена (исх 89)*/
+
+.footer-list {
+    display: flex;
+    width: 120px;
+}
+
 .tel-link {
+    display: block;
+    width: 720px;
+    margin: 0 auto;
     color: #000000;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.footer-academy {
+    display: block;
+    width: 115;
+    margin-left: auto;
 }
 
 .twitter {
@@ -340,3 +423,4 @@ a {
     background-image: url(../img/youtube.svg);
     background-repeat: no-repeat;
 }
+
