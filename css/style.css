@@ -20,13 +20,18 @@ html {
     height: 100%;
 }
 
-.main-container {
-    flex-grow: 1;
+.div-container {
+    width: 1200px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
 }
+
 body {
     margin: 0;
     display: flex;
-    flex-direction: column;
     min-height: 100%;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
@@ -53,14 +58,8 @@ a {
 
 /*general header set & images*/
 
-.page-header {
-    background-color: #ffffff;
-}
-
 .navigation {
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
 }
 
 .navigation-list {
@@ -72,6 +71,7 @@ a {
     margin: 0 auto;
 }
 /*дал 300px  с запасом*/
+
 .navigation-user {
     width: 300px;
     margin-left: auto;
@@ -99,13 +99,10 @@ a {
 /*main page comparing block*/
 
 .page-container {
-    width: 1200px;
     margin: 0 auto;
 }
 
 .comparing-block {
-    display: block;
-    margin: 0 auto;
     background-image: url(../img/mountain.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -124,7 +121,7 @@ a {
     
 }
 
-.comparing-description {
+.comparing-text {
     font-size: 22px;
     line-height: 36px;
     text-align: center;
@@ -132,40 +129,27 @@ a {
 
 /*main page advantages block*/
 
-.main-advantages-list {
-    margin: 0;
-    padding: 0;
+.advantages-list {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .advantages-item {
-    width: 400px;
-    margin: 0;
+    width: 33.33%;
 }
 
 .advantages-item-blue {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 1200px;
-}
-
-.advantages-container-standard {
-    display: flex;
-    justify-content: space-between;
-}
-
-.advantages-item-blue {
+    width: 100%;
     color: #ffffff;
     background-color: #83B3D3;
 }
 
 .advantages-item-grey {
     background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-item-white {
-    background-color: #ffffff;
 }
 
 .advantages-item-semiblue {
@@ -182,36 +166,22 @@ a {
     text-transform: uppercase;
 }
 
-.list-text {
+.advantages-text {
     color: #333333;
 }
-
-.advantages-number-blue {
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.list-text-blue {
-    color: #ffffff;
-}
-
-/*advantages block extra images (deleted)*/
- 
 
 /*main page recording block*/
 
 .main-recording {
-    width: 1200px;
     text-align: center;
-    background-color: #ffffff;
-    background-repeat: no-repeat;
-    margin: 0 auto;
+    padding: 10px;
 }
 
 .recording-h2 {
     text-transform: uppercase;
     font-size: 30px;
     line-height: 36px;
+    margin-top: 0;
 }
 
 .recording-text {
@@ -287,38 +257,29 @@ a {
 
 .subscription-block {
     text-align: center;
-    background-color: #ffffff;
 }
 
 .main-subscription {
     background-image: url(../img/valley-blur.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
+    color: #ffffff;
 }    
 
 .subscription-title {
     font-size: 30px;
     line-height: 36px;
-    text-align: center;
     text-transform: uppercase;
+    margin-top: 0;
 }
 
 .subscription-text {
     font-size: 22px;
     line-height: 26px;
-    text-align: center;
-}
-
-.main-subscription-title {
-    color: #ffffff
-}
-
-.main-subscription-text {
-    color: #ffffff
 }
 
 .catalog-subscription-text {
-    color: #333333
+    color: #333333;
 }
 
 /*catalog gallery set*/
@@ -379,17 +340,14 @@ a {
 /*general footer set & images*/
 
 .page-footer {
-    background-color: #ffffff;
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
+    margin-top: auto;
 }
 
 /*ширина блока увеличена (исх 89)*/
 
 .footer-list {
     display: flex;
-    width: 120px;
 }
 
 .tel-link {
