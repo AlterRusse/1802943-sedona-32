@@ -132,7 +132,6 @@ a {
 .advantages-list {
     text-align: center;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -142,7 +141,6 @@ a {
 
 .advantages-item-blue {
     display: flex;
-    flex-direction: row;
     width: 100%;
     color: #ffffff;
     background-color: #83B3D3;
@@ -342,6 +340,7 @@ a {
 .page-footer {
     display: flex;
     margin-top: auto;
+    justify-content: space-between;
 }
 
 /*ширина блока увеличена (исх 89)*/
@@ -351,9 +350,6 @@ a {
 }
 
 .tel-link {
-    display: block;
-    width: 720px;
-    margin: 0 auto;
     color: #000000;
     font-size: 40px;
     line-height: 40px;
@@ -361,9 +357,9 @@ a {
     text-transform: uppercase;
 }
 
-.footer-academy {
+.academy-logo {
     display: block;
-    width: 115;
+    width: 115px;
     margin-left: auto;
 }
 
