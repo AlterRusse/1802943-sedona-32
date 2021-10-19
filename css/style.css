@@ -66,7 +66,7 @@ a {
     width: 309px;
 }
 
-.header-logo {
+.sedona-logo {
     display: block; 
     margin: 0 auto;
 }
@@ -222,13 +222,12 @@ a {
 }
 
 .btn-load-more {
+    display: block;
     background-color: #83B3D3;
     font-size: 20px;
     line-height: 26px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
+    width: 625px;
+    margin: 10px auto;
 }
 
 .btn-select {
@@ -238,14 +237,23 @@ a {
 .btn-chosen {
     background-color: #7DB54F;
 }
-
-.btn-pagination-link {
+    
+.btn-pagination {
+    text-align: center;
+    display: block;
+    /*временный margin-top, чтобы боксы не сливались*/
+    margin-top: 10px;
+    margin-right: 7px;
+    color: #ffffff;
     background-color: #83B3D3;
-    font-weight: 700;
     font-size: 20px;
     line-height: 26px;
+    font-weight: 700;
+    width: 55px;
 }
 
+/*тут переназначил color, который от body идет, чтобы 
+обертки для кнопок не плодить*/
 .btn-pagination-current {
     color: #000000;
     background-color: #E5E5E5;
@@ -280,10 +288,76 @@ a {
     color: #333333;
 }
 
+/*catalog set*/
 /*catalog gallery set*/
 
-.hotel-card {
-    color: #333333;
+.filters-container {
+    background-image: url(../img/mountain-blur.jpg);
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 35px 72px 83px 71px;
+}
+
+.gallery-block {
+    margin: 44px 72px 89px 72px;
+}
+
+.inner-header-title {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.breadcrumbs {
+    display: flex;
+}
+
+.breadcrumbs-link {
+    color: #ffffff;
+}
+
+.filter-form {
+    display: flex;
+}
+
+.div-price-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+}
+
+.div-hotels-filter {
+    display: flex;
+}
+
+.sortint-title-h2 {
+    text-transform: uppercase;
+    height: 39px;
+}
+
+.modetype-container {
+    display: flex;
+    width: 160px;
+    margin-left: auto;
+}
+
+.listmode-img {
+    background-image: url(../img/list-mode.svg);
+    background-repeat: no-repeat;
+}
+
+.slidemode-img {
+    background-image: url(../img/slide-mode.svg);
+    background-repeat: no-repeat;
+}
+
+.cardmode-img {
+    background-image: url(../img/card-mode.svg);
+    background-repeat: no-repeat;
+}
+
+.hotel-list {
+    display: flex;
+    flex-direction: column;
 }
 
 .catalog-title-h3 {
@@ -303,36 +377,57 @@ a {
     color: #333333;
 }
 
-/* catalog gallery images*/
-
 .house-catalog {
     background-image: url(../img/house-mini.svg);
     background-repeat: no-repeat;
 }
 
-.catalog-filters {
-    background-image: url(../img/mountain-blur.jpg);
-    background-repeat: no-repeat;
+.hotel-card {
+    display: flex;
+    color: #333333;
 }
 
-.list-img {
-    background-image: url(../img/list-mode.svg);
-    background-repeat: no-repeat;
+.hotel-photo {
+    margin-right: 36px;
 }
 
-.slide-img {
-    background-image: url(../img/slide-mode.svg);
-    background-repeat: no-repeat;
+.hotel-info-box {
+    display: flex;
+    flex-direction: column;
 }
 
-.card-img {
-    background-image: url(../img/card-mode.svg);
-    background-repeat: no-repeat;
+.hotel-price-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-btn-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-info-btn {
+    margin-right: 8px;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
 }
 
 .rating-stars {
     background-image: url(../img/rating-star.svg);
     background-repeat: no-repeat;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination-list {
+    display: flex;
 }
 
 /*general footer set & images*/
@@ -342,8 +437,6 @@ a {
     margin-top: auto;
     justify-content: space-between;
 }
-
-/*ширина блока увеличена (исх 89)*/
 
 .footer-list {
     display: flex;
