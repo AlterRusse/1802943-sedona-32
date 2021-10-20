@@ -391,11 +391,6 @@ a {
     margin-right: 36px;
 }
 
-.hotel-info-box {
-    display: flex;
-    flex-direction: column;
-}
-
 .hotel-price-info {
     display: flex;
     justify-content: space-between;
@@ -411,8 +406,6 @@ a {
 }
 
 .rating-container {
-    display: flex;
-    flex-direction: column;
     margin-left: auto;
 }
 
