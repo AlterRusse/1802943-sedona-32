@@ -259,6 +259,10 @@ a {
     background-color: #E5E5E5;
 }
 
+.btn-mini {
+    background-repeat: no-repeat;
+}
+
 /*subscription block general set*/
 
 .subscription-block {
@@ -319,22 +323,21 @@ a {
     display: flex;
 }
 
-.div-price-buttons {
-    display: flex;
-    flex-direction: column;
+.price-buttons-box {
+    display: block;
     width: 160px;
 }
 
-.div-hotels-filter {
+.hotels-filter-box {
     display: flex;
 }
 
-.sortint-title-h2 {
+.sorting-title {
     text-transform: uppercase;
     height: 39px;
 }
 
-.modetype-container {
+.modetype-box {
     display: flex;
     width: 160px;
     margin-left: auto;
@@ -342,25 +345,17 @@ a {
 
 .listmode-img {
     background-image: url(../img/list-mode.svg);
-    background-repeat: no-repeat;
 }
 
 .slidemode-img {
     background-image: url(../img/slide-mode.svg);
-    background-repeat: no-repeat;
 }
 
 .cardmode-img {
     background-image: url(../img/card-mode.svg);
-    background-repeat: no-repeat;
 }
 
-.hotel-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.catalog-title-h3 {
+.catalog-title {
     font-size: 24px;
     line-height: 31px;
     color: #000000;
@@ -384,6 +379,7 @@ a {
 
 .hotel-card {
     display: flex;
+    align-items: center;
     color: #333333;
 }
 
@@ -405,7 +401,7 @@ a {
     margin-right: 8px;
 }
 
-.rating-container {
+.rating-box {
     margin-left: auto;
 }
 
@@ -414,7 +410,7 @@ a {
     background-repeat: no-repeat;
 }
 
-.pagination-container {
+.pagination-box {
     display: flex;
     justify-content: space-between;
 }
