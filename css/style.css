@@ -54,11 +54,6 @@ body {
 /*бахну следующий селектор и на все ссылки-изображения ради display. Или лучше
 это прописывать в каждом целевом классе? или сделать некий селектор типа block-bro
 как в случае с clear-list?*/
-.clear-block-link {
-    text-decoration: none;
-    display: block;
-    color: #000000;
-}
 
 .clear-text-link {
     text-decoration: none;
@@ -117,6 +112,7 @@ body {
 }
 
 .search {
+    display: block;
     width: 18px;
     height: 18px;
     background-image: url(../img/search.svg);
@@ -124,6 +120,7 @@ body {
 }
 
 .chosen {
+    display: block;
     width: 18px;
     height: 17px;
     background-image: url(../img/hearth.svg);
@@ -242,7 +239,12 @@ body {
     background-repeat: no-repeat;
 }
 
+.btn-header {
+    display: block;
+}
+
 .btn-recording {
+    display: block;
     text-transform: uppercase;
     font-size: 20px;
     line-height: 36px;
@@ -276,6 +278,7 @@ body {
 }
 
 .btn-select {
+    display: block;
     background-color: #83B3D3;
 }
 
@@ -351,11 +354,11 @@ body {
     background-image: url(../img/mountain-blur.jpg);
     background-repeat: no-repeat;
     color: #ffffff;
-    padding: 35px 72px 83px 71px;
+    padding: 35px 72px 83px;
 }
 
 .gallery-block {
-    padding: 44px 72px 89px 72px;
+    padding: 44px 72px 89px;
 }
 
 .inner-header-title {
@@ -374,6 +377,7 @@ body {
 }
 
 .house-catalog {
+    display: block;
     width: 12px;
     height: 12px;
     background-image: url(../img/house-mini.svg);
@@ -397,6 +401,7 @@ body {
 .catalog-filter-item {
     margin-top: 16px;
 } 
+
 
 .price-filter-box {
     margin-left: 167px;
@@ -429,6 +434,7 @@ body {
 .price-box {
     display: flex;
     margin-right: 0;
+    border: 0;
 }
 
 .modetype-box {
@@ -438,18 +444,21 @@ body {
 }
 
 .listmode-img {
+    display: block;
     width: 16px;
     height: 14px;
     background-image: url(../img/list-mode.svg);
 }
 
 .slidemode-img {
+    display: block;
     width: 16px;
     height: 14px;
     background-image: url(../img/slide-mode.svg);
 }
 
 .cardmode-img {
+    display: block;
     width: 16px;
     height: 14px;
     background-image: url(../img/card-mode.svg);
@@ -500,6 +509,7 @@ body {
 }
 
 .catalog-info-btn {
+    display: block;
     margin-right: 8px;
 }
 
@@ -527,12 +537,16 @@ body {
     flex-wrap: wrap;
 }
 
+.catalog-subscription {
+    padding: 0 72px 138px;
+}
+
 /*general footer set & images*/
 
 .page-footer {
     display: flex;
     margin-top: auto;
-    padding: 40px 72px 30px 71px;
+    padding: 40px 72px 30px;
     align-items: center;
 }
 
@@ -563,18 +577,21 @@ body {
 }
 
 .twitter {
+    display: block;
     width: 18px;
     height: 15px;
     background-image: url(../img/twitter.svg);
 }
 
 .facebook {
+    display: block;
     width: 10px;
     height: 18px;
     background-image: url(../img/facebook.svg);
 }
 
 .youtube {
+    display: block;
     width: 20px;
     height: 16px;
     background-image: url(../img/youtube.svg);
