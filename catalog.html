@@ -123,16 +123,12 @@
                 <div class="slider-box">
                   <legend class="catalog-filter-legend">Стоимость, ₽:</legend>
                   <div class="filter-input-box">
-                    <label class="catalog-filter-label visually-hidden">
-                      <span>от</span>
-                      <input class="catalog-filter-input" type="text" name="from" placeholder="0">
-                    </label>
-                    <label class="catalog-filter-label visually-hidden">
-                      <span>до</span>
-                      <input class="catalog-filter-input" type="text" name="to" placeholder="9000">
-                    </label>
+                    <label class="catalog-filter-label visually-hidden" for="filter-input-from"></label>
+                    <input class="catalog-filter-input" type="text" name="from" placeholder="0" id="filter-input-from">
+                    <label class="catalog-filter-label visually-hidden" for="filter-input-to"></label>
+                    <input class="catalog-filter-input" type="text" name="to" placeholder="9000" id="ilter-input-to">
                   </div>
-                  
+
                   <p class="toggle-box">
                     <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Левый ползунок</span>
@@ -161,7 +157,7 @@
             <form action="https://echo.htmlacademy.ru" method="get" class="hotels-filter">
               <label class="visually-hidden" for="sorting">Сортировка</label>
               <select class="select-control" id="sorting" name="sorting">
-                <option value="popular">Сначала дешевые</option>
+                <option value="popular">Сначала дешёвые</option>
                 <option value="cheap">Сначала популярное</option>
                 <option value="expensive">Сначала дорогое</option>
               </select>
@@ -182,104 +178,104 @@
           </div>
 
           <ul class="hotel-list clear-list">
-            <li class="hotel-item">
-              <div class="hotel-card">
-                <a href="#" class="hotel-photo">
-                  <img src="img/hotel-amara.jpg" alt="Amara" width="180px" height="120px">
+            <li class="hotel-card">
+              
+              <a href="#" class="hotel-photo">
+                <img src="img/hotel-amara.jpg" alt="Amara" width="180px" height="120px">
+              </a>
+              <div class="hotel-info-box">
+                <a href="#" class="catalog-title-link clear-text-link">
+                  <h3 class="catalog-title">Amara Resort & Spa</h3>
                 </a>
-                <div class="hotel-info-box">
-                  <a href="#" class="catalog-title-link clear-text-link">
-                    <h3 class="catalog-title">Amara Resort & Spa</h3>
-                  </a>
-                  <div class="card-undertitle-box">
-                    <p class="hotel-type">Гостиница</p>
-                    <p class="hotel-price">От 4000</p>
-                    <a class="btn catalog-info-btn clear-text-link" href="#">Подробнее</a>
-                    <button class="btn btn-select" type="button">В избранное</button>
-                  </div>
-                </div>
-                <div class="rating-box">
-                  <div class="rating-stars" data-stars="4">
-                      <span class="visually-hidden">4 звезды</span>
-                  </div>
-                  <p class="social-rating-text">Рейтинг: 8,5</p>
+                <div class="card-undertitle-box">
+                  <p class="hotel-type">Гостиница</p>
+                  <p class="hotel-price">От 4000</p>
+                  <a class="btn catalog-info-btn clear-text-link" href="#">Подробнее</a>
+                  <button class="btn btn-select" type="button">В избранное</button>
                 </div>
               </div>
+              <div class="rating-box">
+                <div class="rating-stars" data-stars="4">
+                    <span class="visually-hidden">4 звезды</span>
+                </div>
+                <p class="social-rating-text">Рейтинг: 8,5</p>
+              </div>
+              
             </li>
 
-            <li class="hotel-item">
-              <div class="hotel-card">
-                <a href="#" class="hotel-photo">
-                  <img src="img/hotel-desert.jpg" alt="Desert" width="180px" height="120px">
+            <li class="hotel-card">
+              
+              <a href="#" class="hotel-photo">
+                <img src="img/hotel-desert.jpg" alt="Desert" width="180px" height="120px">
+              </a>
+              <div class="hotel-info-box">
+                <a href="#" class="catalog-title-link clear-text-link">
+                  <h3 class="catalog-title">Desert Quail Inn</h3>
                 </a>
-                <div class="hotel-info-box">
-                  <a href="#" class="catalog-title-link clear-text-link">
-                    <h3 class="catalog-title">Desert Quail Inn</h3>
-                  </a>
-                  <div class="card-undertitle-box">
-                    <p class="hotel-type">Мотель</p>
-                    <p class="hotel-price">От 3000</p>
-                    <a class="btn catalog-info-btn clear-text-link" href="#">Подробнее</a>
-                    <button class="btn btn-select" type="button">В избранное</button>
-                  </div>
-                </div>
-                <div class="rating-box">
-                  <div class="rating-stars" data-stars="3">
-                    <span class="visually-hidden">3 звезды</span>
-                  </div>
-                  <p class="social-rating-text">Рейтинг: 8,9</p>
+                <div class="card-undertitle-box">
+                  <p class="hotel-type">Мотель</p>
+                  <p class="hotel-price">От 3000</p>
+                  <a class="btn catalog-info-btn clear-text-link" href="#">Подробнее</a>
+                  <button class="btn btn-select" type="button">В избранное</button>
                 </div>
               </div>
+              <div class="rating-box">
+                <div class="rating-stars" data-stars="3">
+                  <span class="visually-hidden">3 звезды</span>
+                </div>
+                <p class="social-rating-text">Рейтинг: 8,9</p>
+              </div>
+              
             </li>
 
-            <li class="hotel-item">
-              <div class="hotel-card">
-                <a href="#" class="hotel-photo"> 
-                  <img src="img/hotel-villas.jpg" alt="Villas" width="180px" height="120px">
+            <li class="hotel-card">
+              
+              <a href="#" class="hotel-photo"> 
+                <img src="img/hotel-villas.jpg" alt="Villas" width="180px" height="120px">
+              </a>
+              <div class="hotel-info-box">
+                <a href="#" class="catalog-title-link clear-text-link">
+                  <h3 class="catalog-title">Villas at Poco Diablo</h3>
                 </a>
-                <div class="hotel-info-box">
-                  <a href="#" class="catalog-title-link clear-text-link">
-                    <h3 class="catalog-title">Villas at Poco Diablo</h3>
-                  </a>
-                  <div class="card-undertitle-box">
-                    <p class="hotel-type">Апартаменты</p>
-                    <p class="hotel-price">От 2000</p>
-                    <a class="btn catalog-info-btn clear-text-link" href="#">Подробнее</a>
-                    <button class="btn btn-select btn-chosen" type="button">В избранном</button>
-                  </div>
+                <div class="card-undertitle-box">
+                  <p class="hotel-type">Апартаменты</p>
+                  <p class="hotel-price">От 2000</p>
+                  <a class="btn catalog-info-btn clear-text-link" href="#">Подробнее</a>
+                  <button class="btn btn-select btn-chosen" type="button">В избранном</button>
                 </div>
-                <div class="rating-box">
-                  <div class="rating-stars" data-stars="2">
-                    <span class="visually-hidden">2 звезды</span>
-                  </div>
-                  <p class="social-rating-text">Рейтинг: 9,2</p>
+              </div>
+              <div class="rating-box">
+                <div class="rating-stars" data-stars="2">
+                  <span class="visually-hidden">2 звезды</span>
                 </div>
-            </div>
+                <p class="social-rating-text">Рейтинг: 9,2</p>
+              </div>
+           
             </li>
 
-            <li class="hotel-item">
-              <div class="hotel-card">
-                <a href="#" class="hotel-photo">
-                  <img src="img/hotel-greentree.jpg" alt="GreenTree" width="180px" height="120px">
+            <li class="hotel-card">
+             
+              <a href="#" class="hotel-photo">
+                <img src="img/hotel-greentree.jpg" alt="GreenTree" width="180px" height="120px">
+              </a>
+              <div class="hotel-info-box">
+                <a href="#" class="catalog-title-link clear-text-link">
+                  <h3 class="catalog-title">GreenTree Inn</h3>
                 </a>
-                <div class="hotel-info-box">
-                  <a href="#" class="catalog-title-link clear-text-link">
-                    <h3 class="catalog-title">GreenTree Inn</h3>
-                  </a>
-                  <div class="card-undertitle-box">
-                    <p class="hotel-type">Гостиница</p>
-                    <p class="hotel-price">От 3000</p>
-                    <a class="btn catalog-info-btn clear-text-link" href="#">Подробнее</a>
-                    <button class="btn btn-select" type="button">В избранное</button>
-                  </div>  
+                <div class="card-undertitle-box">
+                  <p class="hotel-type">Гостиница</p>
+                  <p class="hotel-price">От 3000</p>
+                  <a class="btn catalog-info-btn clear-text-link" href="#">Подробнее</a>
+                  <button class="btn btn-select" type="button">В избранное</button>
+                </div>  
+              </div>
+              <div class="rating-box">
+                <div class="rating-stars" data-stars="2">
+                  <span class="visually-hidden">2 звезды</span>
                 </div>
-                <div class="rating-box">
-                  <div class="rating-stars" data-stars="2">
-                    <span class="visually-hidden">2 звезды</span>
-                  </div>
-                  <p class="social-rating-text">Рейтинг: 9,2</p>
-                </div>
-            </div>
+                <p class="social-rating-text">Рейтинг: 9,2</p>
+              </div>
+            
             </li>
           </ul>
 
