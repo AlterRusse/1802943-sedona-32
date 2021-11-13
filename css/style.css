@@ -87,6 +87,7 @@ body {
     display: flex;
     flex-wrap: wrap; 
     align-items: center;
+    width: 445px;
 }
 
 .navigation-item {
@@ -108,9 +109,15 @@ body {
     margin: 0;
 }
 
-.navigation-link:visited {
-    padding-bottom: 21px;
-    border-bottom: 2px solid #756257;
+.navigation-link-current::after {
+    content: "";
+    width: 85%;
+    height: 2px;
+    bottom: -19px;
+    background-color: #756257;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .navigation-link:hover {
@@ -127,17 +134,17 @@ body {
 }
 
 .user-item {
-    margin: 0;
+    margin-right: 3px;
 }
 
-.user-item:nth-child(2n) {
-    margin: 0 26px 0 3px;
+.user-order-button {
+    margin-left: 23px;
 }
 
 .user-link {
     display: block;
     position: relative;
-    padding: 15px;
+    padding: 5px;
     border: 3px solid transparent;
     border-radius: 10px;
     outline: none;
@@ -147,13 +154,8 @@ body {
     border-color: #83B3D3;
 }
 
-.navigation-icon { 
-    position: absolute;
-    top: 6px;
-    right: 0;
-    bottom: 0;
-    left: 6px;
-    margin: 0;  
+.navigation-icon {
+    display: block;
 }
 
 .navigation-icon:hover {
@@ -166,16 +168,15 @@ body {
 
 .quantity-icon {
     position: absolute;
-    padding: 3px 0;
-    box-sizing:border-box;
+    padding-top: 4px;
+    box-sizing: border-box;
     font-size: 10px;
-    line-height: 13px; /*в макете 13px, увеличил для центрирования по высоте*/
+    line-height: 13px;
     color: #ffffff;
     font-weight: 400;
     margin: 0;
     bottom: 15px;
     left: 17px;
-    text-decoration: none;
     text-align: center;
     background-color: #7DB550;
     width: 19px;
@@ -184,14 +185,17 @@ body {
 }
 
 .sedona-logo {
-    position: absolute; 
+    position: absolute;
     top: 0;
-    left: 43.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
 .navigation-user {
-    padding: 0;
     margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 /*main page comparing block*/
@@ -201,6 +205,8 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     padding-top: 51px;
+    padding-bottom: 83px;
+    position: relative;
 }
 
 .comparing-img {
@@ -208,10 +214,16 @@ body {
     margin: 0 auto;
 }
 
-.div-divider {
+.comparing-block::after {
+    content: "";
     width: 100%;
     height: 57px;
     background-image: url(../img/divider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0;
+    position: absolute;
+    left: 0;
 }
 
 .comparing-title {
@@ -243,6 +255,11 @@ body {
     background-repeat: no-repeat;
 }
 
+.advantages-item-icons {
+    background-position: center 89px;
+    padding-top: 184px;
+}
+
 .advantages-item-blue {
     display: flex;
     width: 100%;
@@ -258,28 +275,16 @@ body {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
-.item-house {
+.advantages-item-house {
     background-image: url(../img/house-icon.svg);
-    background-position-x: center;
-    background-position-y: 89px;
-    padding: 0;
-    padding-top: 184px;
 }
 
-.item-burger {
+.advantages-item-burger {
     background-image: url(../img/burger-icon.svg);
-    background-position-x: center;
-    background-position-y: 89px;
-    padding: 0;
-    padding-top: 184px;
 }
 
-.item-gift {
+.advantages-item-gift {
     background-image: url(../img/present-icon.svg);
-    background-position-x: center;
-    background-position-y: 89px;
-    padding: 0;
-    padding-top: 184px;
 }
 
 .advantages-container {
@@ -339,11 +344,13 @@ body {
 }
 
 .newsletter-input {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
     border: 0;
     background-color: #F2F2F2;
-    padding: 15px 0;
+    padding: 15px 22px;
+    font-family: inherit;
+    line-height: 26px;
     width: 75%;
 }
 
@@ -789,22 +796,21 @@ padding 51px возможно избыточен - select вываливаетс
 }
 
 .footer-link {
+    width: 40px;
+    height: 40px;
     position: relative;
-    padding: 9px 19px;
     border: 3px solid transparent;
     border-radius: 10px;
     outline: none;
+    display: block;
 }
 
 .social-icon {
     position: absolute;
-    right: 9px;
-    top: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     fill: #83B3D3;
-}
-
-.facebook {
-    right: 14px;
 }
 
 .social-icon:hover {
@@ -816,7 +822,6 @@ padding 51px возможно избыточен - select вываливаетс
 }
 
 .footer-link:focus:not(:active) {
-
     border-color: #83B3D3;
 }
 
@@ -848,7 +853,6 @@ padding 51px возможно избыточен - select вываливаетс
 }
 
 .academy-box {
-    display: block;
     width: 160px;
     margin-left: auto;
 }
@@ -857,26 +861,20 @@ padding 51px возможно избыточен - select вываливаетс
     box-sizing: border-box;
     padding: 15px 22px;
     display: block;
-    position: relative;
     border: 3px solid transparent;
     border-radius: 10px;
     outline: none;
 }
 
-.academy-logo {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: 0;
+.academy-link svg {
+    display: block;
 }
 
-.academy-logo:hover {
+.academy-link:hover svg {
     fill: #756257;
 }
 
-.academy-logo:active {
+.academy-link:active svg {
     fill: rgba(117, 98, 87, 0.3);
 }
 
