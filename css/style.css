@@ -168,7 +168,7 @@ body {
 
 .quantity-icon {
     position: absolute;
-    padding-top: 4px;
+    padding-top: 3px;
     box-sizing: border-box;
     font-size: 10px;
     line-height: 13px;
@@ -431,34 +431,6 @@ body {
     border-color: #615048;
 }
 
-.btn-catalog-filter {
-    width: 160px;
-    height: 48px;
-}
-
-.btn-catalog-reset {
-    width: 160px;
-    margin-top: 20px;
-    font-size: 18px;
-    line-height: 23px;
-    font-weight: 400;
-    text-transform: capitalize;
-
-}
-
-.btn-load-more {
-    display: block;
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 26px;
-    width: 625px;
-    padding: 14px 0 15px;
-    margin: 31px auto;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-}
-
 /*subscription block general set*/
 
 .subscription-block {
@@ -488,58 +460,15 @@ body {
     margin-bottom: 26px;
 }
 
-.catalog-subscription-text {
-    color: #333333;
-}
 
 /*catalog set*/
 
 /*catalog gallery set*/
 
-.filters-container {
-    background-image: url(../img/mountain-blur.jpg);
-    background-repeat: no-repeat;
-    color: #ffffff;
-    padding: 35px 72px 83px;
-}
-
-.gallery-block {
-    padding: 44px 72px 89px;
-}
-
-.inner-header-title {
-    font-size: 60px;
-    line-height: 78px;
-    margin: 0;
-    padding-bottom: 10px;
-}
-
 .breadcrumbs {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-}
-
-.breadcrumbs-item {
-    position: relative;
-}
-
-.breadcrumbs-item:nth-child(2n) {
-    margin: 0 11px 0 10px;
-}
-
-.breadcrumbs-link {
-    color: #ffffff;
-    border-radius: 4px;
-}
-
-.house-link {
-    display: block;
-    padding: 1px 8px 3px;
-}
-
-.catalog-filters {
-    margin-top: 45px;
 }
 
 .filter-form {
@@ -550,36 +479,11 @@ body {
     margin: 0;
 }
 
-.catalog-filter-group {
-    margin: 0 67px 0 0;
-}
-
-.catalog-filter-list {
-    line-height: 23px;
-    margin-top: 30px;
-}
-
-.catalog-filter-item {
-    margin-top: 16px;
-} 
-
-.control-input {
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    margin-right: 19px;
-}
-
 .filter-input-box {
     width: 287px;
     margin: 34px 0 20px;
     display: flex;
     border: 2px solid #FFFFFF;
-}
-
-.catalog-filter-input {
-    width: 50%;
-    padding: 13px 0;
 }
 
 .toggle-box {
@@ -600,28 +504,11 @@ body {
     margin-bottom: 42px;
 }
 
-.hotels-filter {
-    margin-left: 192px;
-}
-
-.sorting-title {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 39px;
-}
-
 .price-box {
     display: flex;
     margin-left: 69px;
     border: 0;
     padding: 0;
-}
-
-.catalog-filter-legend {
-    font-size: 20px;
-    line-height: 26px;
-    grid-column: 1 / 3;
 }
 
 .modetype-box {
@@ -631,12 +518,6 @@ body {
     gap: 8px;
     width: 160px;
     margin-left: auto;
-}
-
-.btn-mini {
-    width: 44px;
-    height: 44px;
-    border: 2px solid #E6E6E6;
 }
 
 .pages-quantity {
@@ -651,24 +532,6 @@ body {
     grid-template-rows: 120px;
     color: #333333;
     gap: 36px;
-    border-top: 1px solid #E6E6E6;
-    padding-top: 31px;
-    padding-bottom: 30px;
-}
-
-.hotel-card:last-child  {
-    border-bottom: 1px solid #E6E6E6;
-}
-
-.catalog-title-link {
-    opacity: none;
-}
-
-.catalog-title {
-    margin: 0;
-    padding: 10px 15px;
-    font-size: 24px;
-    line-height: 31px;
 }
 
 .card-undertitle-box {
@@ -679,49 +542,12 @@ body {
     column-gap: 8px;
 }
 
-.hotel-type {
-    margin: 0;
-    line-height: 23px;
-}
-
-.hotel-price {
-    margin: 0;
-    line-height: 23px;
-}
-
-.catalog-info-btn {
-    padding-top: 5px;
-    padding-bottom: 10px;
-    font-size: 16px;
-    border-radius: 4px;
-}
-
-.btn-select {
-    font-size: 16px;
-}
-
-.btn-chosen {
-    background-color: #7DB54F;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 16px;
-    text-transform: uppercase;
-    border-radius: 4px;
-    outline: none;
-}
-
 .rating-box {
     grid-column: 4;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
-
-.rating-stars {
-    width: 18px;
-    height: 17px;
-    margin-right: 7px;
 }
 
 .social-rating-text {
@@ -736,7 +562,6 @@ body {
 .pagination-box {
     display: flex;
     align-items: center;
-    border-top: 1px solid #E6E6E6;
     padding-top: 31px;
 }
 
@@ -746,35 +571,12 @@ body {
     gap: 13px;
 }
 
-.btn-pagination {
-    text-align: center;
-    display: block;
-    color: #ffffff;
-    background-color: #83B3D3;
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 700;
-    width: 55px;
-    padding: 14px 0 15px;
-    outline: none;
-}
-
 .sorting-type { 
     margin-left: auto;
     width: 386px;
     line-height: 23px;
 } /*обратить внимание позднее - элемент не прижался к правой границе родителя
 padding 51px возможно избыточен - select вываливается на следующую строку*/
-
-.pages-quantity {
-    margin-right: 30px; 
-}
-
-.select-control {
-    width: 287px;
-    height: 48px;
-    border: 2px solid #E6E6E6;
-}
 
 .catalog-subscription {
     padding: 0 72px 138px;
