@@ -564,9 +564,6 @@ body {
     margin-bottom: 26px;
 }
 
-.catalog-subscription-text {
-    color: #333333;
-}
 
 /*catalog page*/
 
@@ -724,17 +721,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 42px;
-}
-
-.hotels-filter {
-    margin-left: 192px;
-}
-
-.sorting-title {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 39px;
 }
 
 .price-box {
@@ -989,7 +975,6 @@ body {
 .pagination-box {
     display: flex;
     align-items: center;
-    border-top: 1px solid #E6E6E6;
     padding-top: 31px;
 }
 
