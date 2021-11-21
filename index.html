@@ -40,6 +40,35 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"/>
                 </svg>
                 <p class="quantity-icon">12</p>
+                <div class="popover popover-favourite popover-closed">
+                  <div class="popover-content">
+                    <ul class="favourite-items-list">
+                      <li class="favourite-item">
+                        <div class="favourite-description-box" tabindex="0">
+                          <img src="img/hotel-desert-small.jpg" alt="Desert" width="48" height="48">
+                          <p class="popover-text favourite-hotel-name">Desert Quail Inn</p>
+                          <p class="popover-text favourite-hotel-type">Мотель</p>
+                        </div>
+                        <button class="favourite-item-btn" type="button">
+                          <span class="visually-hidden">удалить из избранного</span>
+                        </button>
+                      </li>
+                      <li class="favourite-item">
+                        <div class="favourite-description-box" tabindex="0">
+                          <img src="img/hotel-villas-small.jpg" alt="Desert" width="48" height="48">
+                          <p class="popover-text favourite-hotel-name">Villas at Poco Diablo</p>
+                          <p class="popover-text favourite-hotel-type">Апартаменты</p>
+                        </div>
+                        <button class="favourite-item-btn" type="button" >
+                          <span class="visually-hidden">удалить из избранного</span>
+                        </button>
+                      </li>
+                    </ul>
+                    <button class=" btn popover-all-btn">все избранные
+                      <span class="visually-hidden">все избранные</span>
+                    </button>
+                  </div>
+                </div>
                 <span class="visually-hidden">
                   Избранное
                 </span>
@@ -71,7 +100,7 @@
               <div class="advantages-container advantages-container-blue">
                 <h3 class="advantages-title">Настоящий городок</h3>
                 <span>- №1 -</span>
-                <p>
+                <p class="advantages-text">
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
               </div>
@@ -81,7 +110,7 @@
               <div class="advantages-container advantages-container-icon">
                 <h3 class="advantages-title">Жильё</h3>
                 <p class="advantages-text">
-                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                  Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!
                 </p>
               </div>
             </li>
@@ -89,7 +118,7 @@
               <div class="advantages-container advantages-container-icon">
                 <h3 class="advantages-title">Еда</h3>
                 <p class="advantages-text">
-                  Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                  Всегда заказывайте <br> топовый фирменный бургер, <br> вы не разочаруетесь!
                 </p>
               </div>
             </li>
@@ -97,16 +126,16 @@
               <div class="advantages-container advantages-container-icon">
                 <h3 class="advantages-title">Сувениры</h3>
                 <p class="advantages-text">
-                  Не только китайского, но и настоящего местного производства!
+                  Не только китайского, <br> но и настоящего местного <br> производства!
                 </p>
               </div>
             </li>
             <li class="advantages-item advantages-item-blue">
               <img src="img/canyon.jpg" alt="Мост дьявола" width="800" height="384">
               <div class="advantages-container advantages-container-blue">
-                <h3 class="advantages-title">Там есть мост дьявола</h3>
+                <h3 class="advantages-title">Там есть <br> мост дьявола</h3>
                 <span>- №2 -</span>
-                <p>
+                <p class="advantages-text">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
               </div>
@@ -122,7 +151,7 @@
             </li>
             <li class="advantages-item advantages-item-semiblue">
               <div class="advantages-container">
-                <h3 class="advantages-title">Красивая дорога</h3>
+                <h3 class="advantages-title">Красивая <br> дорога</h3>
                 <span class="advantages-number">- №4 -</span>
                 <p class="advantages-text">
                   Ехать в Седону из Лас-Вегаса совсем не скучно!
@@ -131,7 +160,7 @@
             </li>
             <li class="advantages-item advantages-item-grey">
               <div class="advantages-container">
-                <h3 class="advantages-title">Мало туристов</h3>
+                <h3 class="advantages-title">Мало <br> туристов</h3>
                 <span class="advantages-number">- №5 -</span>
                 <p class="advantages-text">
                   Большинство едет в Гранд Каньон и толпится там
@@ -144,7 +173,7 @@
         <section class="main-recording">
           <h2 class="recording-title">Заинтересовались?</h2>
           <p class="recording-text">
-            Укажите предполагаемые даты поездки,
+            Укажите предполагаемые даты поездки, <br>
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
           <a class="btn btn-recording clear-text-link" href="">Поиск гостиницы в Седоне</a>
@@ -153,7 +182,7 @@
         <section class="subscription-block main-subscription">
           <h2 class="subscription-title main-subscription-text">Подпишитесь на рассылку</h2>
           <p class="subscription-text main-subscription-text">
-            Только полезная информация и никакого спама, честное бойскаутское!
+            Только полезная информация и никакого спама, <br> честное бойскаутское!
           </p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="newsletter-email">Введите e-mail:</label>
@@ -204,6 +233,74 @@
           </a>
         </p>
       </footer>  
+
+    </div>
+    <div class="modal-box modal-box-close">
+      <div class="modal modal-recording">
+        <div class="modal-header">
+          <h2 class="modal-title">поиск гостиницы в седоне</h2>
+          <button class="modal-close-btn">
+            <span class="visually-hidden">закрыть окно регистрации</span>
+          </button>
+        </div>
+        <form class="recoding-form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="recording-fieldset">
+            <label class="recording-fieldset-label" for="arrival-date">Дата заезда:</label>
+            <div class="recording-field-box" tabindex="0">
+              <input class="recording-field" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
+              <button class="calendar-btn" type="button">
+                <span class="visually-hidden">открыть календарь</span>
+              </button>
+            </div>
+          </fieldset>
+          <p class="underinput-text underinput-text-red">Мы не можем отправить вас в прошлое.</p>
+          <fieldset class="recording-fieldset">
+            <label class="recording-fieldset-label" for="departure-date">Дата выезда:</label>
+            <div class="recording-field-box" tabindex="0">
+              <input class="recording-field" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2021">
+              <button class="calendar-btn" type="button">
+                <span class="visually-hidden">открыть календарь</span>
+              </button>
+            </div>
+          </fieldset>
+          <p class="underinput-text underinput-text-dark">На эти даты есть свободные номера. Пока есть.</p>
+          <fieldset class="recording-fieldset">
+            <label class="recording-fieldset-label" for="aged-quantity">Взрослые:</label>
+            <div class="recording-btn-box recording-btn-box-left">
+              <button class="plus-minus-btn minus-btn" type="button">
+                <span class="visually-hidden">уменьшить</span>
+              </button>
+            </div>
+            <input class="recording-field small-recording-field" type="text" id="aged-quantity" name="aged-quantity" placeholder="2">
+            <div class="recording-btn-box recording-btn-box-right">
+              <button class="plus-minus-btn plus-btn" type="button">
+                <span class="visually-hidden">увеличить</span>
+              </button>
+            </div>
+            <label class="recording-fieldset-label recording-fieldset-label-center" for="children-quantity">
+              Дети:
+              <p class="recording-fieldset-label-info">i</p>
+              <p class="recording-popover">
+                Укажите количество детей, которые будут с вами, 
+                возраст которых от 6 до 18 лет. 
+                Дети до 6 лет размещаются бесплатно.
+              </p>
+            </label>
+            <div class="recording-btn-box recording-btn-box-left">
+              <button class="plus-minus-btn minus-btn" type="button">
+                <span class="visually-hidden">уменьшить</span>
+              </button>
+            </div>
+            <input class="recording-field small-recording-field" type="text" id="children-quantity" name="children-quantity" placeholder="1">
+            <div class="recording-btn-box recording-btn-box-right">
+              <button class="plus-minus-btn plus-btn" type="button">
+                <span class="visually-hidden">увеличить</span>
+              </button>
+            </div>
+          </fieldset>
+          <button class="btn modal-search-btn" type="submit">найти</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
