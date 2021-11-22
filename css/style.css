@@ -107,7 +107,7 @@ body {
 
 .navigation {
     position: relative;
-    padding: 14px 0;
+    padding: 12px 0;
     display: flex;
     align-items: center;
 }
@@ -121,6 +121,13 @@ body {
 
 .navigation-item {
     margin-right: 9px;
+    margin-bottom: 30px;
+}
+
+.navigation-item:nth-last-child(1),
+.navigation-item:nth-last-child(2),
+.navigation-item:nth-last-child(3) {
+    margin-bottom: 0;
 }
 
 .navigation-link {
@@ -142,7 +149,7 @@ body {
     content: "";
     width: 85%;
     height: 2px;
-    bottom: -19px;
+    bottom: -17px;
     background-color: #756257;
     position: absolute;
     left: 50%;
@@ -315,6 +322,7 @@ body {
     padding: 0;
     width: 160px;
     margin-left: auto;
+    transform: translate(3px, 3px);
 }
 
 .academy-link {
@@ -347,7 +355,7 @@ body {
 
 /*main page*/
 
-    /*main page comparing block*/
+/*main page comparing block*/
 
 .comparing-block {
     background-image: url(../img/mountain.jpg);
@@ -459,11 +467,15 @@ body {
 }
 
 .advantages-title {
-    margin: 0;
-    margin-bottom: 28px;
+    margin-top: 0;
+    margin-bottom: 31px;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+}
+
+.advantages-title-margin {
+    margin-bottom: 26px;
 }
 
 .advantages-number {
@@ -479,7 +491,7 @@ body {
     color: #ffffff;
 }
 
-    /*main page recording block*/
+/*main page recording block*/
 
 .main-recording {
     text-align: center;
@@ -647,6 +659,7 @@ body {
     border-radius: 4px;
     display: block;
     outline: none;
+    font-size: 16px;
 }
 
 .breadcrumbs-link:hover {
@@ -774,11 +787,15 @@ body {
 .catalog-filter-legend {
     padding: 0;
     font-size: 20px;
+    font-weight: 700;
     line-height: 26px;
 }
 
 .price-box-legend {
     display: inline;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
     margin-bottom: 29px;
 }
 
@@ -796,7 +813,7 @@ body {
 
 .price-input-box {
     display: flex;
-    margin: 12px 0 28px 0;
+    margin: 8px 0 28px 0;
 }
 
 .price-filter-label {
@@ -813,7 +830,7 @@ body {
 .price-filter-label:first-child {
     border-radius: 4px 0 0 4px;
     border-right-width: 0;
-    margin-right: 2px;
+    margin-right: 3px;
 }
 
 .price-filter-label:last-child {
@@ -935,6 +952,7 @@ body {
     font-weight: 400;
     text-transform: capitalize;
     padding: 5px 0;
+    transform: translateY(8px);
 }
 
 .btn-catalog-reset:hover {
@@ -954,7 +972,7 @@ body {
 }
 
 .gallery-block {
-    margin-bottom: 85px;
+    margin-bottom: 89px;
 }
     
 .hotels-filter-box {
@@ -1311,15 +1329,6 @@ body {
     box-shadow: 0 0 0 3px #756257;
 }
 
-.sorting-form {
-    display: flex;
-    width: max-content;
-    height: 44px;
-    outline: none;
-    border: 2px solid #e5e5e5;
-    border-radius: 4px;
-}
-
 .pages-quantity {
     font-size: 18px;
     line-height: 23px;
@@ -1335,23 +1344,43 @@ body {
     font-weight: 400;
     color: #333333;
     padding: 0 19px 4px 17px;
-    width: 239px;
+    width: 291px;
     height: 48px;
     border: 0;
     outline: none;
+    background-image: url(../img/vertical-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 21px center;
+    border: 2px solid #e5e5e5;
     border-radius: 4px 0 0 4px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    border-radius: 4px;
+}
+
+.select-control:hover {
+    border-color: #83B3D3;
+}
+
+.select-control:active {
+    border: 2px solid #e5e5e5;
+    opacity: 0.6;
+}
+
+.select-control:focus-within:not(:active) {
+    border-color: #83B3D3;
 }
 
 .pages-quantity-box {
     margin-left: auto;
     display: flex;
+    align-items: center;
 }
 
 .select-quantity {
-    width: 112px;
+    width: 163px;
+    display: block;
 }
 
 .select-quantity-label {
@@ -1359,38 +1388,14 @@ body {
     line-height: 23px;
     color: #333333;
     margin-right: 51px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .select-control option {
     font-size: 18px;
     line-height: 23px;
     color: #333333;
-}
-
-.select-control-btn {
-    width: 48px;
-    height: 48px;
-    background-color: #ffffff;
-    background-image: url(../img/vertical-arrow.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    outline: none;
-}
-
-.sorting-form:hover {
-    border-color: #83B3D3;
-}
-
-.sorting-form:active {
-    border: 2px solid #e5e5e5;
-    opacity: 0.6;
-}
-
-.sorting-form:focus-within:not(:active) {
-    border-color: #83B3D3;
 }
 
 .catalog-subscription {
@@ -1558,6 +1563,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 2;
 }
 
 .modal-box-close {
@@ -1653,7 +1659,12 @@ body {
     background-color: #68A2CA;
 }
 
+.recording-fieldset-label-info:hover .recording-popover {
+    display: block;
+}
+
 .recording-popover {
+    display: none;
     position: absolute;
     margin: 0;
     width: 256px;
@@ -1667,18 +1678,20 @@ body {
     font-weight: 400;
     border-radius: 10px;
     box-sizing: border-box;
-    top: 395px;
-    left: 351px;
+    top: 174%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
-.recording-fieldset-label-center::after {
+.recording-popover::after {
     position: absolute;
     content: "";
     border: 19px solid transparent; 
     border-bottom: 16px solid #333333;
-    top: 22px;
-    right: 14px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .recording-field-box {
@@ -1721,13 +1734,10 @@ body {
     background-color: #F2F2F2;
 }
 
-.recording-field::placeholder {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-size: 18px;
-    color: #000000;
-    font-weight: 700;
-    opacity: 0.6;
+.small-recording-field::-webkit-outer-spin-button,
+.small-recording-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .calendar-btn {
