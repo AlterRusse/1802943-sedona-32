@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link  rel="stylesheet" href="css/style.css" type="text/css" >
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
   </head>
   <body>
     <div class="div-container">
@@ -40,39 +41,40 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"/>
                 </svg>
                 <p class="quantity-icon">12</p>
-                <div class="popover popover-favourite popover-closed">
-                  <div class="popover-content">
-                    <ul class="favourite-items-list">
-                      <li class="favourite-item">
-                        <div class="favourite-description-box" tabindex="0">
-                          <img src="img/hotel-desert-small.jpg" alt="Desert" width="48" height="48">
-                          <p class="popover-text favourite-hotel-name">Desert Quail Inn</p>
-                          <p class="popover-text favourite-hotel-type">Мотель</p>
-                        </div>
-                        <button class="favourite-item-btn" type="button">
-                          <span class="visually-hidden">удалить из избранного</span>
-                        </button>
-                      </li>
-                      <li class="favourite-item">
-                        <div class="favourite-description-box" tabindex="0">
-                          <img src="img/hotel-villas-small.jpg" alt="Desert" width="48" height="48">
-                          <p class="popover-text favourite-hotel-name">Villas at Poco Diablo</p>
-                          <p class="popover-text favourite-hotel-type">Апартаменты</p>
-                        </div>
-                        <button class="favourite-item-btn" type="button" >
-                          <span class="visually-hidden">удалить из избранного</span>
-                        </button>
-                      </li>
-                    </ul>
-                    <button class=" btn popover-all-btn">все избранные
-                      <span class="visually-hidden">все избранные</span>
-                    </button>
-                  </div>
-                </div>
                 <span class="visually-hidden">
                   Избранное
                 </span>
               </a>
+              <!--для открытия popover закомментировать селектор .popover-closed в style.css-->
+              <div class="popover popover-closed">
+                <div class="popover-content">
+                  <ul class="favourite-items-list">
+                    <li class="favourite-item">
+                      <div class="favourite-description-box">
+                        <img src="img/hotel-desert-small.jpg" alt="Desert" width="48" height="48">
+                        <p class="popover-text favourite-hotel-name">Desert Quail Inn</p>
+                        <p class="popover-text favourite-hotel-type">Мотель</p>
+                      </div>
+                      <button class="favourite-item-btn" type="button">
+                        <span class="visually-hidden">удалить из избранного</span>
+                      </button>
+                    </li>
+                    <li class="favourite-item">
+                      <div class="favourite-description-box">
+                        <img src="img/hotel-villas-small.jpg" alt="Desert" width="48" height="48">
+                        <p class="popover-text favourite-hotel-name">Villas at Poco Diablo</p>
+                        <p class="popover-text favourite-hotel-type">Апартаменты</p>
+                      </div>
+                      <button class="favourite-item-btn" type="button" >
+                        <span class="visually-hidden">удалить из избранного</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <button class=" btn popover-all-btn">все избранные
+                    <span class="visually-hidden">все избранные</span>
+                  </button>
+                </div>
+              </div>
             </li>
             <li class="user-order-button">
               <a class="btn btn-header clear-text-link" href="#"> Хочу сюда!</a>
@@ -87,10 +89,10 @@
         </div>
         <section class="main-intro">
           <h1 class="comparing-title">
-            Седона - небольшой городок в Аризоне, заслуживающий большего!
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
           </h1>
           <p class="comparing-text">
-            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+            Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
           </p>        
         </section>
 
@@ -99,7 +101,7 @@
             <li class="advantages-item advantages-item-blue">
               <div class="advantages-container advantages-container-blue">
                 <h3 class="advantages-title">Настоящий городок</h3>
-                <span>- №1 -</span>
+                <span>— №1 —</span>
                 <p class="advantages-text">
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
@@ -134,7 +136,7 @@
               <img src="img/canyon.jpg" alt="Мост дьявола" width="800" height="384">
               <div class="advantages-container advantages-container-blue">
                 <h3 class="advantages-title">Там есть <br> мост дьявола</h3>
-                <span>- №2 -</span>
+                <span>— №2 —</span>
                 <p class="advantages-text">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
@@ -143,7 +145,7 @@
             <li class="advantages-item advantages-item-grey">
               <div class="advantages-container">
                 <h3 class="advantages-title">Небольшая площадь</h3>
-                <span class="advantages-number">- №3 -</span>
+                <span class="advantages-number">— №3 —</span>
                 <p class="advantages-text">
                   Все достопримечательности находятся очень близко
                 </p>
@@ -152,7 +154,7 @@
             <li class="advantages-item advantages-item-semiblue">
               <div class="advantages-container">
                 <h3 class="advantages-title">Красивая <br> дорога</h3>
-                <span class="advantages-number">- №4 -</span>
+                <span class="advantages-number">— №4 —</span>
                 <p class="advantages-text">
                   Ехать в Седону из Лас-Вегаса совсем не скучно!
                 </p>
@@ -161,7 +163,7 @@
             <li class="advantages-item advantages-item-grey">
               <div class="advantages-container">
                 <h3 class="advantages-title">Мало <br> туристов</h3>
-                <span class="advantages-number">- №5 -</span>
+                <span class="advantages-number">— №5 —</span>
                 <p class="advantages-text">
                   Большинство едет в Гранд Каньон и толпится там
                 </p>
@@ -186,6 +188,7 @@
           </p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="newsletter-email">Введите e-mail:</label>
+            <!--для input добавить класс newsletter-input-invalid для случая ошибки-->
             <input class="newsletter-input" placeholder="Ваш e-mail" type="email" name="newsletter-email" 
             id="newsletter-email" required>
             <button class="btn btn-newsletter" type="submit">
@@ -233,8 +236,8 @@
           </a>
         </p>
       </footer>  
-
     </div>
+    <!--для открытия modal-box закомментировать селектор .modal-box-close в style.css-->
     <div class="modal-box modal-box-close">
       <div class="modal modal-recording">
         <div class="modal-header">
@@ -246,7 +249,7 @@
         <form class="recoding-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="recording-fieldset">
             <label class="recording-fieldset-label" for="arrival-date">Дата заезда:</label>
-            <div class="recording-field-box" tabindex="0">
+            <div class="recording-field-box">
               <input class="recording-field" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
               <button class="calendar-btn" type="button">
                 <span class="visually-hidden">открыть календарь</span>
@@ -256,7 +259,7 @@
           <p class="underinput-text underinput-text-red">Мы не можем отправить вас в прошлое.</p>
           <fieldset class="recording-fieldset">
             <label class="recording-fieldset-label" for="departure-date">Дата выезда:</label>
-            <div class="recording-field-box" tabindex="0">
+            <div class="recording-field-box">
               <input class="recording-field" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2021">
               <button class="calendar-btn" type="button">
                 <span class="visually-hidden">открыть календарь</span>
@@ -279,13 +282,14 @@
             </div>
             <label class="recording-fieldset-label recording-fieldset-label-center" for="children-quantity">
               Дети:
-              <p class="recording-fieldset-label-info">i</p>
-              <p class="recording-popover">
+            </label>
+            <div class="recording-fieldset-label-info">i</div>
+            <!--для открытия popover закомментировать селектор .popover-closed в style.css-->
+              <div class="recording-popover popover-closed">
                 Укажите количество детей, которые будут с вами, 
                 возраст которых от 6 до 18 лет. 
                 Дети до 6 лет размещаются бесплатно.
-              </p>
-            </label>
+              </div>
             <div class="recording-btn-box recording-btn-box-left">
               <button class="plus-minus-btn minus-btn" type="button">
                 <span class="visually-hidden">уменьшить</span>
