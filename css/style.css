@@ -116,12 +116,13 @@ body {
     display: flex;
     flex-wrap: wrap; 
     align-items: center;
-    width: 445px;
+    width: 427px;
 }
 
 .navigation-item {
     margin-right: 9px;
-    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 7px;
 }
 
 .navigation-item:nth-last-child(1),
@@ -602,6 +603,7 @@ body {
 .main-subscription {
     background-image: url(../img/valley-blur.jpg);
     background-size: 100% auto;
+    background-color: #6C9E42;
     background-repeat: no-repeat;
     color: #ffffff;
 }    
@@ -623,6 +625,7 @@ body {
 .filters-container {
     background-image: url(../img/mountain-blur.jpg);
     background-repeat: no-repeat;
+    background-color: #3f5e72;
     color: #ffffff;
     padding: 35px 62px 83px;
 }
@@ -1825,6 +1828,9 @@ body {
 }
 
 .modal-search-btn {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
     padding: 7px 0;
     margin-top: 40px;
     width: 100%;
